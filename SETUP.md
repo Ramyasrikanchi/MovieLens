@@ -1,4 +1,4 @@
-# FilmyMatch Project Setup
+# MovieLens Project Setup
 
 This project is structured for a production-quality movie recommendation system using Python, FastAPI, NLP, and the TMDB 5000 dataset.
 

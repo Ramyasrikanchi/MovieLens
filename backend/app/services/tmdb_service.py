@@ -334,7 +334,7 @@ def get_tmdb_http_session() -> requests.Session:
             {
                 "Accept": "application/json",
                 "Connection": "keep-alive",
-                "User-Agent": "FilmyMatch/0.1.0",
+                "User-Agent": "MovieLens/0.1.0",
             }
         )
         _tmdb_http_session = session

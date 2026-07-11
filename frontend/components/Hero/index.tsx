@@ -40,7 +40,7 @@ type HeroProps = {
 export function Hero({
   eyebrow = "Search first. Recommend from the right match.",
   title = "Movie discovery that feels like a warm little adventure.",
-  body = "Find a movie or TV show from TMDB, select the exact result, and let FilmyMatch compare it with the local recommendation engine.",
+  body = "Find a movie or TV show from TMDB, select the exact result, and let MovieLens compare it with the local recommendation engine.",
   primaryHref = "/search",
   primaryLabel = "Search titles",
   secondaryHref = "/recommend/movie/157336",

@@ -8,7 +8,7 @@ export function Navbar() {
           <span className="grid size-9 place-items-center rounded-[10px] bg-parchment-card shadow-[var(--shadow-subtle)]">
             <span className="size-4 rounded-full bg-ember-orange" />
           </span>
-          FilmyMatch
+          MovieLens
         </Link>
 
         <div className="hidden items-center gap-8 text-[14px] font-medium tracking-[-0.18px] text-charcoal-primary md:flex">

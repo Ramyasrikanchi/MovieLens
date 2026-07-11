@@ -103,7 +103,7 @@ class MovieRecommender:
         self._build_local_tfidf_matrix()
 
         if not self._model_logged:
-            logger.info("[FilmyMatch] Loaded recommendation model: %s", self.model_name)
+            logger.info("[MovieLens] Loaded recommendation model: %s", self.model_name)
             self._model_logged = True
 
     def _build_local_tfidf_matrix(self) -> None:

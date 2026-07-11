@@ -1,8 +1,8 @@
-# FilmyMatch Project Outline
+# MovieLens Project Outline
 
 ## Project Goal
 
-FilmyMatch is a full-stack movie recommendation application that helps users search for a movie or TV title, select the correct TMDB result, and receive explainable recommendations from a local movie corpus.
+MovieLens is a full-stack movie recommendation application that helps users search for a movie or TV title, select the correct TMDB result, and receive explainable recommendations from a local movie corpus.
 
 The project combines a content-based recommendation engine with a modern web interface. Its main goal is not only to return similar movies, but also to make the recommendation process understandable by showing metadata, similarity scores, and overlap signals such as shared genres, keywords, cast, and director.
 

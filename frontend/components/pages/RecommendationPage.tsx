@@ -186,7 +186,7 @@ export function RecommendationPage({
 
     if (typeof window !== "undefined") {
       const raw = window.sessionStorage.getItem(
-        `filmymatch:selected:${mediaType}:${tmdbId}`,
+        `movielens:selected:${mediaType}:${tmdbId}`,
       );
       if (raw) {
         try {
@@ -337,7 +337,7 @@ export function RecommendationPage({
                 </div>
                 <p className="mt-5 max-w-[760px] text-[16px] leading-[1.5] tracking-[-0.18px] text-graphite">
                   {selectedMovie?.overview ??
-                    "FilmyMatch is comparing this title against the local TMDB 5000 corpus using the baseline TF-IDF tags model."}
+                    "MovieLens is comparing this title against the local TMDB 5000 corpus using the baseline TF-IDF tags model."}
                 </p>
                 {selectedMovie?.genres.length ? (
                   <div className="mt-4 flex flex-wrap gap-2 text-[12px] leading-[1.58] tracking-[-0.14px] text-ash">

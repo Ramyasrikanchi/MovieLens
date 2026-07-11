@@ -10,7 +10,7 @@ export function SearchPage() {
 
   function handleSelect(result: SearchResult) {
     if (typeof window !== "undefined") {
-      window.sessionStorage.setItem(`filmymatch:selected:${result.media_type}:${result.tmdb_id}`, JSON.stringify(result));
+      window.sessionStorage.setItem(`movielens:selected:${result.media_type}:${result.tmdb_id}`, JSON.stringify(result));
     }
     router.push(`/recommend/${result.media_type}/${result.tmdb_id}`);
   }
@@ -24,7 +24,7 @@ export function SearchPage() {
           <p className="text-[14px] font-medium tracking-[-0.18px] text-ember-orange">Search TMDB first</p>
           <h1 className="hero-display mt-4">Choose the exact movie or TV show before generating recommendations.</h1>
           <p className="mx-auto mt-6 max-w-[640px] text-[16px] leading-[1.5] tracking-[-0.18px] text-graphite">
-            This page only resolves candidates. Once you select one result, FilmyMatch moves into a separate recommendation screen for that TMDB id.
+            This page only resolves candidates. Once you select one result, MovieLens moves into a separate recommendation screen for that TMDB id.
           </p>
         </div>
       </section>

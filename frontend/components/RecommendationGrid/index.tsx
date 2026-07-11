@@ -21,7 +21,7 @@ export function RecommendationGrid({ selected, recommendations }: Recommendation
     return (
       <EmptyState
         title="Search for a title to begin"
-        body="Choose the exact TMDB movie or TV result first. Recommendations appear after FilmyMatch compares that title against the local dataset."
+        body="Choose the exact TMDB movie or TV result first. Recommendations appear after MovieLens compares that title against the local dataset."
       />
     );
   }

@@ -7,7 +7,7 @@ export function HomePage() {
     <main className="min-h-screen bg-warm-canvas">
       <Navbar />
       <Hero
-        body="FilmyMatch separates search from recommendation so you can resolve the right TMDB title first, then inspect richer recommendation cards with explainable overlap."
+        body="MovieLens separates search from recommendation so you can resolve the right TMDB title first, then inspect richer recommendation cards with explainable overlap."
         primaryHref="/search"
         primaryLabel="Start searching"
         secondaryHref="/recommend/movie/157336"

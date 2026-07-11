@@ -21,7 +21,7 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
 
 def create_app() -> FastAPI:
     app = FastAPI(
-        title="FilmyMatch Recommendation API",
+        title="MovieLens Recommendation API",
         description="Movie recommendation API powered by TF-IDF content similarity.",
         version="0.1.0",
         lifespan=lifespan,

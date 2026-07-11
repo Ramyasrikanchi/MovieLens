@@ -4,7 +4,7 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://127.0.0.1:8
 
 async function requestJson<T>(path: string, signal?: AbortSignal): Promise<T> {
   const url = `${API_BASE_URL}${path}`;
-  console.info("[FilmyMatch Frontend] API request", url);
+  console.info("[MovieLens Frontend] API request", url);
 
   const response = await fetch(url, {
     method: "GET",
@@ -15,7 +15,7 @@ async function requestJson<T>(path: string, signal?: AbortSignal): Promise<T> {
   });
 
   const payload = await response.json().catch(() => null);
-  console.info("[FilmyMatch Frontend] API response", url, payload);
+  console.info("[MovieLens Frontend] API response", url, payload);
   if (!response.ok) {
     const detail = payload?.detail ?? "Request failed.";
     throw new Error(typeof detail === "string" ? detail : JSON.stringify(detail));

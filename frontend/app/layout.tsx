@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "FilmyMatch",
+  title: "MovieLens",
   description: "Search movies and TV shows, then generate content-based recommendations."
 };
 
