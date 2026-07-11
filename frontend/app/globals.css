@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warm-canvas: #fbfaf9;
+  --color-stone-surface: #f2f0ed;
+  --color-parchment-card: #f8f7f4;
+  --color-graphite: #474645;
+  --color-charcoal-primary: #343433;
+  --color-midnight: #121212;
+  --color-obsidian: #000000;
+  --color-ash: #848281;
+  --color-fog: #c6c6c6;
+  --color-smoke: #a7a7a7;
+  --color-ember-orange: #ff3e00;
+  --color-meadow-green: #00ca48;
+  --color-sky-blue: #0090ff;
+  --color-sunburst-yellow: #ffbb26;
+  --color-deep-amber: #d48f00;
+  --color-coral-red: #ff2b3a;
+  --font-family: Fraunces, "Playfair Display", Georgia, serif;
+  --font-inter: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+:root {
+  --color-warm-canvas: #fbfaf9;
+  --color-stone-surface: #f2f0ed;
+  --color-parchment-card: #f8f7f4;
+  --color-graphite: #474645;
+  --color-charcoal-primary: #343433;
+  --color-midnight: #121212;
+  --color-ash: #848281;
+  --color-smoke: #a7a7a7;
+  --color-ember-orange: #ff3e00;
+  --color-meadow-green: #00ca48;
+  --color-sky-blue: #0090ff;
+  --color-sunburst-yellow: #ffbb26;
+  --color-deep-amber: #d48f00;
+  --font-family: Fraunces, "Playfair Display", Georgia, serif;
+  --font-inter: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --surface-card-surface: #ffffff;
+  --surface-recessed-panel: #f8f7f4;
+  --shadow-subtle: color(display-p3 0.94902 0.941176 0.929412) 0px 0px 0px 1px inset;
+  --shadow-subtle-3: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px;
+  --shadow-sm: rgba(0, 0, 0, 0.04) 0px 1px 6px 0px, rgba(0, 0, 0, 0.05) 0px 0px 24px 0px;
+  --page-max-width: 1200px;
+  --radius-cards: 10px;
+  --radius-inputs: 10px;
+  --radius-buttons: 32px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-warm-canvas);
+}
+
+body {
+  margin: 0;
+  background: var(--color-warm-canvas);
+  color: var(--color-graphite);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.stone-card {
+  background: var(--surface-card-surface);
+  border-radius: var(--radius-cards);
+  box-shadow: var(--shadow-subtle);
+}
+
+.pill-dark {
+  min-height: 40px;
+  border-radius: var(--radius-buttons);
+  background: var(--color-midnight);
+  color: #ffffff;
+  padding: 0 14px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.18px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.pill-dark:hover {
+  background: var(--color-charcoal-primary);
+  transform: translateY(-1px);
+}
+
+.pill-light {
+  min-height: 40px;
+  border-radius: var(--radius-buttons);
+  background: #f6f4ef;
+  color: var(--color-midnight);
+  padding: 0 14px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.18px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.pill-light:hover {
+  background: var(--color-stone-surface);
+  transform: translateY(-1px);
+}
+
+.hero-display {
+  color: var(--color-charcoal-primary);
+  font-family: var(--font-family), ui-serif, Georgia, serif;
+  font-size: clamp(44px, 8vw, 68px);
+  font-weight: 500;
+  letter-spacing: clamp(-2.11px, -0.25vw, -0.88px);
+  line-height: 1.09;
+}
+
+.section-heading {
+  color: var(--color-midnight);
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: 600;
+  letter-spacing: -1.14px;
+  line-height: 1.09;
+}
+
+.blob-float {
+  animation: blobFloat 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+@keyframes blobFloat {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.94) rotate(var(--rotate-start, 0deg));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(var(--rotate-end, 0deg));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
